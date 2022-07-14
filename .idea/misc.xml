@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/byui/Spring 2022/CSE 310/sprint5/3PROJECT/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
-        <entry key="..\:/byui/Spring 2022/CSE 310/sprint5/3PROJECT/app/src/main/res/layout/fragment_first.xml" value="0.358695652173913" />
+        <entry key="..\:/byui/Spring 2022/CSE 310/sprint5/3PROJECT/app/src/main/res/layout/fragment_first.xml" value="0.5" />
+        <entry key="..\:/byui/Spring 2022/CSE 310/sprint5/3PROJECT/app/src/main/res/layout/fragment_second.xml" value="0.33" />
       </map>
     </option>
   </component>

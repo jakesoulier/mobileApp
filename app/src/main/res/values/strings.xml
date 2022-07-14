@@ -2,11 +2,15 @@
     <string name="app_name">cmon</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
+    <string name="first_fragment_label">Workout App</string>
+    <string name="second_fragment_label">Results</string>
+    <string name="next">Save</string>
     <string name="previous">Previous</string>
-
+    <string name="repResults">goodwork!</string>
     <string name="hello_first_fragment">Record Weights</string>
     <string name="second_fragment_reps">Repetitions</string>
+    <string name="weightTitle">WEIGHT</string>
+    <string name="repTitle">REPS</string>
+    <string name="repPlaceholder">reps</string>
+    <string name="wgPlaceholder">lbs</string>
 </resources>

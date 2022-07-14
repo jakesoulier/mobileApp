@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    tools:context=".FirstFragment"
+    android:background="@color/cream">
 
     <TextView
-        android:id="@+id/textview_first"
+        android:id="@+id/titleRecord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_first_fragment"
-        android:textColor="@color/teal_700"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/dark_orange"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,123 +29,139 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="384dp"
         android:text="@string/next"
+        android:textColor="@color/vomit_yellow"
+        
+        app:iconTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+        app:layout_constraintTop_toBottomOf="@+id/titleRecord" />
 
     <TextView
         android:id="@+id/repTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="REPS"
-        android:textColor="@color/black"
+        android:text="@string/repTitle"
+        android:textColor="@color/warm_brown"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/weigthTitle"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_first"
+        app:layout_constraintTop_toBottomOf="@+id/titleRecord"
         app:layout_constraintVertical_bias="0.132" />
 
     <TextView
         android:id="@+id/weigthTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WEIGHT"
-        android:textColor="@color/black"
+        android:text="@string/weightTitle"
+        android:textColor="@color/warm_brown"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/repTitle"
-        app:layout_constraintTop_toBottomOf="@+id/textview_first"
+        app:layout_constraintTop_toBottomOf="@+id/titleRecord"
         app:layout_constraintVertical_bias="0.132" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/repInput1"
         android:layout_width="64dp"
         android:layout_height="48dp"
         android:layout_marginStart="104dp"
         android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="reps"
+        android:hint="@string/repPlaceholder"
         android:inputType="number"
+        android:textColor="@color/warm_brown"
+
+        android:textColorHint="#795548"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/repTitle" />
 
     <EditText
-        android:id="@+id/editTextNumber4"
+        android:id="@+id/repInput3"
         android:layout_width="64dp"
         android:layout_height="48dp"
         android:layout_marginStart="104dp"
         android:layout_marginBottom="60dp"
         android:ems="10"
-        android:hint="reps"
+        android:hint="@string/repPlaceholder"
         android:inputType="number"
+        android:textColor="@color/warm_brown"
+        android:textColorHint="#616161"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/button_first"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber5"
+        android:id="@+id/repInput2"
         android:layout_width="64dp"
         android:layout_height="48dp"
         android:layout_marginStart="104dp"
         android:layout_marginBottom="24dp"
         android:ems="10"
-        android:hint="reps"
+        android:hint="@string/repPlaceholder"
         android:inputType="number"
+        android:textColor="@color/warm_brown"
+        android:textColorHint="#616161"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber4"
+        app:layout_constraintBottom_toTopOf="@+id/repInput3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/repInput1"
         app:layout_constraintVertical_bias="0.714" />
 
     <EditText
-        android:id="@+id/editTextNumber6"
+        android:id="@+id/weightInput1"
         android:layout_width="64dp"
         android:layout_height="48dp"
         android:layout_marginTop="36dp"
         android:ems="10"
-        android:hint="lbs"
+        android:hint="@string/wgPlaceholder"
         android:inputType="number"
+        android:textColor="@color/warm_brown"
+        android:textColorHint="#616161"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
+        app:layout_constraintStart_toEndOf="@+id/repInput1"
         app:layout_constraintTop_toBottomOf="@+id/weigthTitle" />
 
     <EditText
-        android:id="@+id/editTextNumber8"
+        android:id="@+id/weightInput2"
         android:layout_width="64dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
-        android:hint="lbs"
+        android:hint="@string/wgPlaceholder"
         android:inputType="number"
+        android:textColor="@color/warm_brown"
+        android:textColorHint="#616161"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.962"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber6" />
+        app:layout_constraintStart_toEndOf="@+id/repInput2"
+        app:layout_constraintTop_toBottomOf="@+id/weightInput1" />
 
     <EditText
-        android:id="@+id/editTextNumber9"
+        android:id="@+id/weightInput3"
         android:layout_width="64dp"
         android:layout_height="48dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
-        android:hint="lbs"
+        android:hint="@string/wgPlaceholder"
         android:inputType="number"
+        android:textColor="@color/warm_brown"
+        android:textColorHint="#616161"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/button_first"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.962"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber8"
+        app:layout_constraintStart_toEndOf="@+id/repInput3"
+        app:layout_constraintTop_toBottomOf="@+id/weightInput2"
         app:layout_constraintVertical_bias="0.357" />
 
 
