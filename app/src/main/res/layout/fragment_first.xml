@@ -29,13 +29,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="384dp"
         android:text="@string/next"
-        android:textColor="@color/vomit_yellow"
-        
+
         app:iconTint="@color/black"
+        app:backgroundTint="@color/dark_orange"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleRecord" />
+        app:layout_constraintTop_toBottomOf="@+id/titleRecord"
+        app:rippleColor="@color/black" />
 
     <TextView
         android:id="@+id/repTitle"
@@ -46,14 +47,14 @@
         android:textColor="@color/warm_brown"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/weigthTitle"
+        app:layout_constraintEnd_toStartOf="@+id/weightTitle"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleRecord"
         app:layout_constraintVertical_bias="0.132" />
 
     <TextView
-        android:id="@+id/weigthTitle"
+        android:id="@+id/weightTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/weightTitle"
@@ -127,7 +128,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"
         app:layout_constraintStart_toEndOf="@+id/repInput1"
-        app:layout_constraintTop_toBottomOf="@+id/weigthTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/weightTitle" />
 
     <EditText
         android:id="@+id/weightInput2"
