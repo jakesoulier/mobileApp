@@ -1,7 +1,7 @@
 # Mobile App
 I have created my first mobile app.  I was mainly interested in learning and exploring the interface of Android Studio.  I did this by creating an app that would record how many repititions and how much weight a user did for a specific workout.
 
-[Workout App](https://youtu.be/81Rqcfu_hb8)
+[Workout App](https://youtu.be/vRixdD1rTkg)
 
 # Development Environment
 
